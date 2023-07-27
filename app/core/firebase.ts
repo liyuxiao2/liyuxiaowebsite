@@ -1,6 +1,5 @@
 /* SPDX-FileCopyrightText: 2014-present Kriasoft */
 /* SPDX-License-Identifier: MIT */
-
 import { getAnalytics } from "firebase/analytics";
 import { FirebaseError, initializeApp, type FirebaseApp } from "firebase/app";
 import {
