@@ -30,7 +30,8 @@ const analytics = getAnalytics(app);
 export function AppLayout(): JSX.Element {
   return (
     <div>
-      <p> hello </p>
+      <p> hello my name is </p>
     </div>
   );
 }
+
