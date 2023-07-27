@@ -1,6 +1,5 @@
 /* SPDX-FileCopyrightText: 2014-present Kriasoft */
 /* SPDX-License-Identifier: MIT */
-
 import {
   ThemeProvider as MuiThemeProvider,
   type PaletteMode,
@@ -15,6 +14,23 @@ import {
 import { components } from "./components.js";
 import palettes from "./palettes.js";
 import * as typography from "./typography.js";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBh94An2j7PePvH5tYSzt3ILf8F65ucoUo",
+  authDomain: "liyuxiaowebsite.firebaseapp.com",
+  projectId: "liyuxiaowebsite",
+  storageBucket: "liyuxiaowebsite.appspot.com",
+  messagingSenderId: "489159034358",
+  appId: "1:489159034358:web:200c39eea9ac08347ef3d7",
+  measurementId: "G-12N441V6C2"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 /**
  * The name of the selected UI theme.

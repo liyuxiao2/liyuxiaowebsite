@@ -21,7 +21,7 @@ import {
   require_prop_types,
   styleFunctionSx_default,
   useTheme_default
-} from "./chunk-SM7HP67M.js";
+} from "./chunk-JZCODD6A.js";
 import {
   _extends
 } from "./chunk-ML2ZIGG3.js";
@@ -663,4 +663,4 @@ export {
   getInitColorSchemeScript,
   experimental_sx
 };
-//# sourceMappingURL=chunk-IZT55WSJ.js.map
+//# sourceMappingURL=chunk-DU7WFOLR.js.map

@@ -10,10 +10,13 @@ import { RecoilRoot } from "recoil";
 import { router } from "./routes/index.js";
 import { ThemeProvider } from "./theme/index.js";
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 
-const firebaseApp = {
+
+
+
+//fire base app
+const firebaseApp =  initializeApp({
   apiKey: "AIzaSyBh94An2j7PePvH5tYSzt3ILf8F65ucoUo",
   authDomain: "liyuxiaowebsite.firebaseapp.com",
   projectId: "liyuxiaowebsite",
@@ -21,10 +24,8 @@ const firebaseApp = {
   messagingSenderId: "489159034358",
   appId: "1:489159034358:web:200c39eea9ac08347ef3d7",
   measurementId: "G-12N441V6C2"
-}
+})
 
-const app = initializeApp(firebaseApp);
-const analytics = getAnalytics(app);
 
 
 
