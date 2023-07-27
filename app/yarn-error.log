@@ -1,0 +1,82 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn workspace app deploy
+
+PATH: 
+  /Users/liyuxiao/Documents/GitHub/liyuxiaowebsite/app/node_modules/.bin:/Users/liyuxiao/Documents/GitHub/liyuxiaowebsite/node_modules/.bin:/Users/liyuxiao/Documents/GitHub/node_modules/.bin:/Users/liyuxiao/Documents/node_modules/.bin:/Users/liyuxiao/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  ReferenceError: prefix is not defined
+      at getGlobalPrefix (/usr/local/lib/node_modules/yarn/lib/cli.js:31637:5)
+      at NpmRegistry.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:31872:288)
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:328:14
+      at new Promise (<anonymous>)
+      at new F (/usr/local/lib/node_modules/yarn/lib/cli.js:5305:28)
+      at NpmRegistry.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:307:12)
+      at NpmRegistry.getPossibleConfigLocations (/usr/local/lib/node_modules/yarn/lib/cli.js:31916:20)
+      at NpmRegistry.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:31951:40)
+
+npm manifest: 
+  {
+    "name": "app",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "start": "vite serve",
+      "build": "vite build",
+      "preview": "vite preview",
+      "test": "vitest",
+      "coverage": "vitest --coverage",
+      "deploy": "yarn workspace edge deploy",
+      "app:start": "yarn workspace app start",
+      "app:build": "yarn workspace app build",
+      "app:preview": "yarn workspace app preview",
+      "app:deploy": "yarn workspace app deploy"
+    },
+    "dependencies": {
+      "@babel/runtime": "^7.22.6",
+      "@emotion/react": "^11.11.1",
+      "@emotion/styled": "^11.11.0",
+      "@mui/icons-material": "^5.14.1",
+      "@mui/lab": "^5.0.0-alpha.137",
+      "@mui/material": "^5.14.1",
+      "firebase": "^10.0.0",
+      "localforage": "^1.10.0",
+      "notistack": "^3.0.1",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-router-dom": "^6.14.2",
+      "recoil": "^0.7.7"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.22.9",
+      "@emotion/babel-plugin": "^11.11.0",
+      "@types/node": "^20.4.2",
+      "@types/react": "^18.2.15",
+      "@types/react-dom": "^18.2.7",
+      "@vitejs/plugin-react": "^4.0.3",
+      "@vitest/coverage-v8": "^0.33.0",
+      "envars": "^0.4.0",
+      "happy-dom": "^10.5.2",
+      "typescript": "~5.1.6",
+      "vite": "^4.4.4",
+      "vitest": "^0.33.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

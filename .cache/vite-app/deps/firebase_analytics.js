@@ -14,10 +14,10 @@ import {
   isIndexedDBAvailable,
   registerVersion,
   validateIndexedDBOpenable
-} from "./chunk-5RLRI52D.js";
+} from "./chunk-K2XPA6I2.js";
 import "./chunk-5WWUZCGV.js";
 
-// ../node_modules/idb/build/wrap-idb-value.js
+// ../node_modules/@firebase/installations/node_modules/idb/build/wrap-idb-value.js
 var instanceOfAny = (object, constructors) => constructors.some((c) => object instanceof c);
 var idbProxyableTypes;
 var cursorAdvanceMethods;
@@ -160,7 +160,7 @@ function wrap(value) {
 }
 var unwrap = (value) => reverseTransformCache.get(value);
 
-// ../node_modules/idb/build/index.js
+// ../node_modules/@firebase/installations/node_modules/idb/build/index.js
 function openDB(name3, version3, { blocked, upgrade, blocking, terminated } = {}) {
   const request = indexedDB.open(name3, version3);
   const openPromise = wrap(request);

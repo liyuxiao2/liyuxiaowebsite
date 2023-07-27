@@ -1,5 +1,4 @@
-/* SPDX-FileCopyrightText: 2014-present Kriasoft */
-/* SPDX-License-Identifier: MIT */
+
 
 import { CssBaseline } from "@mui/material";
 import { SnackbarProvider } from "notistack";
