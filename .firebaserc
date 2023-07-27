@@ -1,7 +1,8 @@
 {
   "projects": {
     "public": "liyuxiaowebsite",
-    "staging": "liyuxiaowebsite"
+    "staging": "liyuxiaowebsite",
+    "default": "liyuxiaowebsite"
   },
   "targets": {},
   "etags": {}

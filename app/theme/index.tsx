@@ -16,6 +16,9 @@ import palettes from "./palettes.js";
 import * as typography from "./typography.js";
 
 
+/**
+ * The name of the selected UI theme.
+ */
 export const ThemeName = atom<PaletteMode>({
   key: "ThemeName",
   effects: [
