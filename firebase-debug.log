@@ -37,3 +37,37 @@
 [info] i  hosting: ::1 - - [27/Jul/2023:02:59:24 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [27/Jul/2023:02:59:24 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
 [info] i  hosting: ::1 - - [27/Jul/2023:02:59:27 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [27/Jul/2023:02:59:27 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
 [info] i  hosting: ::1 - - [27/Jul/2023:02:59:27 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [27/Jul/2023:02:59:27 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[debug] [2023-07-27T03:00:39.859Z] ----------------------------------------------------------------------
+[debug] [2023-07-27T03:00:39.861Z] Command:       /usr/local/bin/node /Users/liyuxiao/.npm-global/bin/firebase serve
+[debug] [2023-07-27T03:00:39.861Z] CLI Version:   12.4.6
+[debug] [2023-07-27T03:00:39.861Z] Platform:      darwin
+[debug] [2023-07-27T03:00:39.861Z] Node Version:  v18.16.1
+[debug] [2023-07-27T03:00:39.862Z] Time:          Wed Jul 26 2023 23:00:39 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-07-27T03:00:39.862Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-27T03:00:39.931Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-27T03:00:39.932Z] > authorizing via signed-in user (liyuxiao2@gmail.com)
+[debug] [2023-07-27T03:00:39.932Z] [iam] checking project liyuxiaowebsite for permissions ["firebase.projects.get"]
+[debug] [2023-07-27T03:00:39.933Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/liyuxiaowebsite:testIamPermissions [none]
+[debug] [2023-07-27T03:00:39.933Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/liyuxiaowebsite:testIamPermissions x-goog-quota-user=projects/liyuxiaowebsite
+[debug] [2023-07-27T03:00:39.933Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/liyuxiaowebsite:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-27T03:00:40.185Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/liyuxiaowebsite:testIamPermissions 200
+[debug] [2023-07-27T03:00:40.186Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/liyuxiaowebsite:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-27T03:00:40.188Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite [none]
+[debug] [2023-07-27T03:00:40.577Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite 200
+[debug] [2023-07-27T03:00:40.578Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite {"projectId":"liyuxiaowebsite","projectNumber":"489159034358","displayName":"liyuxiaowebsite","name":"projects/liyuxiaowebsite","resources":{"hostingSite":"liyuxiaowebsite","realtimeDatabaseInstance":"liyuxiaowebsite-default-rtdb"},"state":"ACTIVE","etag":"1_b5fe8a69-1072-4214-aef6-ffeff9a45104"}
+[info] 
+[info] === Serving from '/Users/liyuxiao/Documents/GitHub/liyuxiaowebsite'...
+[info] 
+[debug] [2023-07-27T03:00:40.583Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/liyuxiaowebsite/sites 
+[debug] [2023-07-27T03:00:40.952Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/liyuxiaowebsite/sites 200
+[debug] [2023-07-27T03:00:40.953Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/liyuxiaowebsite/sites {"sites":[{"name":"projects/liyuxiaowebsite/sites/liyuxiaowebsite","defaultUrl":"https://liyuxiaowebsite.web.app","appId":"1:489159034358:web:200c39eea9ac08347ef3d7","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-27T03:00:40.953Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite/webApps/1:489159034358:web:200c39eea9ac08347ef3d7/config [none]
+[debug] [2023-07-27T03:00:41.335Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite/webApps/1:489159034358:web:200c39eea9ac08347ef3d7/config 200
+[debug] [2023-07-27T03:00:41.335Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite/webApps/1:489159034358:web:200c39eea9ac08347ef3d7/config {"projectId":"liyuxiaowebsite","appId":"1:489159034358:web:200c39eea9ac08347ef3d7","databaseURL":"https://liyuxiaowebsite-default-rtdb.firebaseio.com","storageBucket":"liyuxiaowebsite.appspot.com","apiKey":"AIzaSyBh94An2j7PePvH5tYSzt3ILf8F65ucoUo","authDomain":"liyuxiaowebsite.firebaseapp.com","messagingSenderId":"489159034358","measurementId":"G-12N441V6C2"}
+[debug] [2023-07-27T03:00:41.345Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite [none]
+[debug] [2023-07-27T03:00:41.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite 200
+[debug] [2023-07-27T03:00:41.666Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/liyuxiaowebsite {"projectId":"liyuxiaowebsite","projectNumber":"489159034358","displayName":"liyuxiaowebsite","name":"projects/liyuxiaowebsite","resources":{"hostingSite":"liyuxiaowebsite","realtimeDatabaseInstance":"liyuxiaowebsite-default-rtdb"},"state":"ACTIVE","etag":"1_b5fe8a69-1072-4214-aef6-ffeff9a45104"}
+[info] i  hosting[liyuxiaowebsite]: Serving hosting files from: layout {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mlayout\u001b[22m"}}
+[info] ✔  hosting[liyuxiaowebsite]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [27/Jul/2023:03:00:44 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [27/Jul/2023:03:00:44 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
